@@ -31,7 +31,7 @@ Route::middleware('auth')->group(function () {
 
             // Memperbarui data karyawan
             Route::put('/karyawan/update', [KaryawanController::class, 'update'])->name('karyawan.update');
-            Route::resource('pengajuan-cuti', PengajuanCutiController::class);
+            Route::resource('pengajuan', PengajuanCutiController::class);
             Route::resource('users', UserController::class);
         });
     });

@@ -37,8 +37,7 @@
             </svg>
             Users
         </a>
-        <a href="{{ route('dashboard.pengajuan-cuti.index') }}"
-            class="block px-4 py-2 hover:bg-blue-700 flex items-center">
+        <a href="{{ route('dashboard.pengajuan.index') }}" class="block px-4 py-2 hover:bg-blue-700 flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H3" />

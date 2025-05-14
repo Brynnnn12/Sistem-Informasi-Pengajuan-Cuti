@@ -11,7 +11,7 @@ class StorePengajuanCutiRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,35 @@ class StorePengajuanCutiRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'jenis_cuti_id' => 'required|exists:jenis_cutis,id',
+            'tanggal_mulai' => 'required|date',
+            'tanggal_selesai' => 'required|date|after_or_equal:tanggal_mulai',
+            'alasan' => 'required|string|max:255',
+            'lampiran_keterangan' => 'required|file|mimes:pdf,jpg,jpeg,png|max:2048',
+        ];
+    }
+    /**
+     * Get the validation error messages.
+     *
+     * @return array<string, string>
+     */
+    public function messages(): array
+    {
+        return [
+            'jenis_cuti_id.required' => 'Jenis cuti harus dipilih.',
+            'jenis_cuti_id.exists' => 'Jenis cuti yang dipilih tidak valid.',
+            'tanggal_mulai.required' => 'Tanggal mulai harus diisi.',
+            'tanggal_mulai.date' => 'Tanggal mulai harus berupa tanggal yang valid.',
+            'tanggal_selesai.required' => 'Tanggal selesai harus diisi.',
+            'tanggal_selesai.date' => 'Tanggal selesai harus berupa tanggal yang valid.',
+            'tanggal_selesai.after_or_equal' => 'Tanggal selesai harus setelah atau sama dengan tanggal mulai.',
+            'alasan.required' => 'Alasan harus diisi.',
+            'alasan.string' => 'Alasan harus berupa string.',
+            'alasan.max' => 'Alasan tidak boleh lebih dari 255 karakter.',
+            'lampiran_keterangan.required' => 'Lampiran keterangan harus diunggah.',
+            'lampiran_keterangan.file' => 'Lampiran keterangan harus berupa file.',
+            'lampiran_keterangan.mimes' => 'Lampiran keterangan harus berupa file dengan format pdf, jpg, jpeg, atau png.',
+            'lampiran_keterangan.max' => 'Lampiran keterangan tidak boleh lebih dari 2MB.',
         ];
     }
 }

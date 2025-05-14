@@ -21,7 +21,7 @@ class PengajuanCutiPolicy
      */
     public function view(User $user, PengajuanCuti $pengajuanCuti): bool
     {
-        return false;
+        return $user->hasRole('Admin') || $pengajuanCuti->user_id == $user->id;
     }
 
     /**
@@ -37,7 +37,7 @@ class PengajuanCutiPolicy
      */
     public function update(User $user, PengajuanCuti $pengajuanCuti): bool
     {
-        return false;
+        return $user->hasRole('Admin') || $pengajuanCuti->karyawan_id == $user->karyawan->id;
     }
 
     /**
@@ -45,7 +45,7 @@ class PengajuanCutiPolicy
      */
     public function delete(User $user, PengajuanCuti $pengajuanCuti): bool
     {
-        return false;
+        return $user->hasRole('Admin') || $pengajuanCuti->karyawan_id == $user->karyawan->id;
     }
 
     /**
