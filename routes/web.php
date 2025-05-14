@@ -22,17 +22,16 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::prefix('dashboard')->name('dashboard.')->group(function () {
         Route::middleware(['auth', 'role:Admin'])->group(function () {
+            Route::resource('users', UserController::class);
+
             Route::resource('jabatan', JabatanController::class);
             Route::resource('jenis-cuti', JenisCutiController::class);
             Route::get('/karyawan', [KaryawanController::class, 'index'])->name('karyawan.index');
-
-            // Mengedit data karyawan
             Route::get('/karyawan/edit', [KaryawanController::class, 'edit'])->name('karyawan.edit');
-
-            // Memperbarui data karyawan
             Route::put('/karyawan/update', [KaryawanController::class, 'update'])->name('karyawan.update');
+            Route::patch('/pengajuan/{pengajuan}/status/{status}', [PengajuanCutiController::class, 'updateStatus'])
+                ->name('pengajuan.updateStatus');
             Route::resource('pengajuan', PengajuanCutiController::class);
-            Route::resource('users', UserController::class);
         });
     });
 });

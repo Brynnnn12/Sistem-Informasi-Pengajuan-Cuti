@@ -73,18 +73,57 @@
                                     @endif
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
-                                    @if ($cuti->status == 'diajukan')
-                                        <span class="text-yellow-500">Pending</span>
-                                    @elseif ($cuti->status == 'disetujui')
-                                        <span class="text-green-500">Approved</span>
-                                    @elseif ($cuti->status == 'ditolak')
-                                        <span class="text-red-500">Rejected</span>
-                                    @endif
+                                    @role('User')
+                                        <!-- Tampilan untuk User -->
+                                        @if ($cuti->status == 'diajukan')
+                                            <span class="text-yellow-500">Diajukan</span>
+                                        @elseif ($cuti->status == 'disetujui')
+                                            <i class="fa-solid fa-circle-check"></i>
+                                            <span class="text-green-500">Disetujui</span>
+                                        @elseif ($cuti->status == 'ditolak')
+                                            <i class="fa-solid fa-circle-exclamation"></i>
+                                            <span class="text-red-500">Ditolak</span>
+                                        @endif
+                                    @endrole
+
+                                    @role('Admin')
+                                        <!-- Tampilan untuk Admin -->
+                                        @if ($cuti->status == 'diajukan')
+                                            <form
+                                                action="{{ route('dashboard.pengajuan.updateStatus', ['pengajuan' => $cuti->id, 'status' => 'disetujui']) }}"
+                                                method="POST" class="inline-block">
+                                                @csrf
+                                                @method('PATCH')
+                                                <button type="submit"
+                                                    class="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-lg text-xs">
+                                                    Setujui
+                                                </button>
+                                            </form>
+                                            <form
+                                                action="{{ route('dashboard.pengajuan.updateStatus', ['pengajuan' => $cuti->id, 'status' => 'ditolak']) }}"
+                                                method="POST" class="inline-block">
+                                                @csrf
+                                                @method('PATCH')
+                                                <button type="submit"
+                                                    class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-lg text-xs">
+                                                    Tolak
+                                                </button>
+                                            </form>
+                                        @elseif ($cuti->status == 'disetujui')
+                                            <i class="fa-solid fa-circle-check"></i>
+                                            <span class="text-green-500">Disetujui</span>
+                                        @elseif ($cuti->status == 'ditolak')
+                                            <i class="fa-solid fa-circle-exclamation"></i>
+                                            <span class="text-red-500">Ditolak</span>
+                                        @endif
+                                    @endrole
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                     <x-action-buttons :item="$cuti" editRoute="dashboard.pengajuan.edit"
-                                        deleteRoute="dashboard.pengajuan.destroy" />
+                                        deleteRoute="dashboard.pengajuan.destroy" :edit="!in_array($cuti->status, ['disetujui', 'ditolak'])" />
+
                                 </td>
+
                             </tr>
                         @empty
                             <tr>

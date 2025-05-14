@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="bg-white p-6 rounded-xl shadow-sm card">
         <x-breadcrumb :links="[
-            'Karyawan' => null,
+            'Users' => null,
         ]" />
 
         <!-- Notifikasi Sukses atau Error -->
@@ -49,7 +49,7 @@
                                 {{ $user->getRoleNames()->join(', ') }}</td>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                <a href="{{ route('dashboard.users.edit', $user->id) }}"
+                                {{-- <a href="{{ route('dashboard.users.edit', $user->id) }}"
                                     class="text-blue-600 hover:text-blue-900 mr-3">Edit</a>
                                 <form action="{{ route('dashboard.users.destroy', $user) }}" method="POST"
                                     class="inline">
@@ -57,7 +57,9 @@
                                     @method('DELETE')
                                     <button type="submit" onclick="return confirm('Are you sure?')"
                                         class="text-red-600 hover:text-red-900">Delete</button>
-                                </form>
+                                </form> --}}
+                                <x-action-buttons :item="$user" editRoute="dashboard.users.edit"
+                                    deleteRoute="dashboard.users.destroy" />
                             </td>
                         </tr>
                     @empty
