@@ -14,6 +14,7 @@
 </head>
 
 <body class="bg-gray-50 font-sans antialiased">
+    <x-dashboard.message />
     <!-- Navbar Sederhana -->
     <nav class="bg-white shadow-sm">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
