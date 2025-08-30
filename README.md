@@ -14,6 +14,7 @@ Sistem Informasi Pengajuan Cuti adalah aplikasi web berbasis Laravel yang diranc
 ## 📸 Screenshot
 
 <!-- Tambahkan screenshot aplikasi Anda di sini -->
+
 ![Dashboard](https://via.placeholder.com/800x400/1e40af/ffffff?text=Dashboard+Screenshot)
 
 ## ✨ Demo
@@ -22,16 +23,16 @@ Sistem Informasi Pengajuan Cuti adalah aplikasi web berbasis Laravel yang diranc
 
 ## 📋 Table of Contents
 
-- [🚀 Fitur Utama](#-fitur-utama)
-- [🛠️ Teknologi yang Digunakan](#️-teknologi-yang-digunakan)
-- [📦 Persyaratan Sistem](#-persyaratan-sistem)
-- [🔧 Cara Instalasi](#-cara-instalasi)
-- [👥 Default Users](#-default-users)
-- [📊 Database Schema](#-database-schema)
-- [🔐 Role dan Permission](#-role-dan-permission)
-- [🧪 Testing](#-testing)
-- [🛡️ Security](#️-security)
-- [📞 Support & Kontribusi](#-support--kontribusi)
+-   [🚀 Fitur Utama](#-fitur-utama)
+-   [🛠️ Teknologi yang Digunakan](#️-teknologi-yang-digunakan)
+-   [📦 Persyaratan Sistem](#-persyaratan-sistem)
+-   [🔧 Cara Instalasi](#-cara-instalasi)
+-   [👥 Default Users](#-default-users)
+-   [📊 Database Schema](#-database-schema)
+-   [🔐 Role dan Permission](#-role-dan-permission)
+-   [🧪 Testing](#-testing)
+-   [🛡️ Security](#️-security)
+-   [📞 Support & Kontribusi](#-support--kontribusi)
 
 ## 🚀 Fitur Utama
 
@@ -39,31 +40,31 @@ Sistem Informasi Pengajuan Cuti adalah aplikasi web berbasis Laravel yang diranc
   
 ### 👨‍💼 Admin Features
 
-| Feature | Deskripsi |
-|---------|-----------|
-| 🏠 **Dashboard Admin** | Overview sistem dengan statistik cuti |
-| 👥 **Manajemen User** | Kelola akun pengguna sistem |
-| 💼 **Manajemen Jabatan** | CRUD data jabatan karyawan |
-| 📋 **Manajemen Jenis Cuti** | Kelola jenis-jenis cuti yang tersedia |
-| 👤 **Manajemen Karyawan** | Kelola data karyawan |
-| ✅ **Persetujuan Cuti** | Approve/reject pengajuan cuti karyawan |
-| 📊 **Laporan Cuti** | Monitoring dan pelaporan data cuti |
+| Feature                     | Deskripsi                              |
+| --------------------------- | -------------------------------------- |
+| 🏠 **Dashboard Admin**      | Overview sistem dengan statistik cuti  |
+| 👥 **Manajemen User**       | Kelola akun pengguna sistem            |
+| 💼 **Manajemen Jabatan**    | CRUD data jabatan karyawan             |
+| 📋 **Manajemen Jenis Cuti** | Kelola jenis-jenis cuti yang tersedia  |
+| 👤 **Manajemen Karyawan**   | Kelola data karyawan                   |
+| ✅ **Persetujuan Cuti**     | Approve/reject pengajuan cuti karyawan |
+| 📊 **Laporan Cuti**         | Monitoring dan pelaporan data cuti     |
 
 ### 👤 Karyawan Features
 
-| Feature | Deskripsi |
-|---------|-----------|
-| 📝 **Pengajuan Cuti** | Submit permintaan cuti dengan lampiran |
-| 📄 **Riwayat Cuti** | Melihat status dan history pengajuan |
-| ⚙️ **Profile Management** | Kelola profil personal |
+| Feature                   | Deskripsi                              |
+| ------------------------- | -------------------------------------- |
+| 📝 **Pengajuan Cuti**     | Submit permintaan cuti dengan lampiran |
+| 📄 **Riwayat Cuti**       | Melihat status dan history pengajuan   |
+| ⚙️ **Profile Management** | Kelola profil personal                 |
 
 ### 🔐 Sistem Keamanan
 
-| Feature | Deskripsi |
-|---------|-----------|
-| 🔒 **Role-based Access Control** | Pembatasan akses berdasarkan role |
-| 🔑 **Authentication Laravel Breeze** | Sistem login yang aman |
-| 🛡️ **Laravel Permission** | Manajemen permission yang fleksibel |
+| Feature                              | Deskripsi                           |
+| ------------------------------------ | ----------------------------------- |
+| 🔒 **Role-based Access Control**     | Pembatasan akses berdasarkan role   |
+| 🔑 **Authentication Laravel Breeze** | Sistem login yang aman              |
+| 🛡️ **Laravel Permission**            | Manajemen permission yang fleksibel |
 
 </div>
 
@@ -71,16 +72,16 @@ Sistem Informasi Pengajuan Cuti adalah aplikasi web berbasis Laravel yang diranc
 
 <div align="center">
 
-| Category | Technology |
-|----------|------------|
-| **Backend** | ![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=flat&logo=laravel&logoColor=white) |
-| **Frontend** | ![Blade](https://img.shields.io/badge/Blade-Templates-FF2D20?style=flat&logo=laravel&logoColor=white) ![Alpine.js](https://img.shields.io/badge/Alpine.js-8BC0D0?style=flat&logo=alpine.js&logoColor=black) |
-| **Styling** | ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white) |
-| **Database** | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white) |
-| **Authentication** | ![Laravel Breeze](https://img.shields.io/badge/Laravel-Breeze-FF2D20?style=flat&logo=laravel&logoColor=white) |
-| **Permission** | ![Spatie](https://img.shields.io/badge/Spatie-Laravel_Permission-197EC8?style=flat) |
-| **Build Tools** | ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white) |
-| **PHP Version** | ![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=flat&logo=php&logoColor=white) |
+| Category           | Technology                                                                                                                                                                                                  |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Backend**        | ![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=flat&logo=laravel&logoColor=white)                                                                                                        |
+| **Frontend**       | ![Blade](https://img.shields.io/badge/Blade-Templates-FF2D20?style=flat&logo=laravel&logoColor=white) ![Alpine.js](https://img.shields.io/badge/Alpine.js-8BC0D0?style=flat&logo=alpine.js&logoColor=black) |
+| **Styling**        | ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)                                                                                              |
+| **Database**       | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)          |
+| **Authentication** | ![Laravel Breeze](https://img.shields.io/badge/Laravel-Breeze-FF2D20?style=flat&logo=laravel&logoColor=white)                                                                                               |
+| **Permission**     | ![Spatie](https://img.shields.io/badge/Spatie-Laravel_Permission-197EC8?style=flat)                                                                                                                         |
+| **Build Tools**    | ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)                                                                                                                      |
+| **PHP Version**    | ![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=flat&logo=php&logoColor=white)                                                                                                                    |
 
 </div>
 
@@ -98,32 +99,38 @@ Pastikan sistem Anda memiliki:
 ## 🔧 Cara Instalasi
 
 ### Prasyarat
+
 Pastikan Anda sudah menginstall:
-- PHP >= 8.2
-- Composer
-- Node.js >= 16.x
-- NPM atau Yarn
-- MySQL >= 8.0 atau PostgreSQL >= 13
+
+-   PHP >= 8.2
+-   Composer
+-   Node.js >= 16.x
+-   NPM atau Yarn
+-   MySQL >= 8.0 atau PostgreSQL >= 13
 
 ### Langkah-langkah Instalasi
 
 #### 1️⃣ Clone Repository
+
 ```bash
 git clone https://github.com/Brynnnn12/Sistem-Informasi-Pengajuan-Cuti.git
 cd leave-management
 ```
 
 #### 2️⃣ Install Dependencies PHP
+
 ```bash
 composer install
 ```
 
 #### 3️⃣ Install Dependencies Node.js
+
 ```bash
 npm install
 ```
 
 #### 4️⃣ Konfigurasi Environment
+
 ```bash
 # Copy file environment
 cp .env.example .env
@@ -133,7 +140,9 @@ php artisan key:generate
 ```
 
 #### 5️⃣ Konfigurasi Database
+
 Edit file `.env` dan sesuaikan konfigurasi database:
+
 ```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -144,6 +153,7 @@ DB_PASSWORD=your_password
 ```
 
 #### 6️⃣ Migrasi Database
+
 ```bash
 # Jalankan migrasi
 php artisan migrate
@@ -153,11 +163,13 @@ php artisan db:seed
 ```
 
 #### 7️⃣ Storage Link
+
 ```bash
 php artisan storage:link
 ```
 
 #### 8️⃣ Build Assets
+
 ```bash
 # Development
 npm run dev
@@ -167,6 +179,7 @@ npm run build
 ```
 
 #### 9️⃣ Jalankan Aplikasi
+
 ```bash
 # Menggunakan PHP built-in server
 php artisan serve
@@ -178,9 +191,9 @@ php artisan serve
 
 Setelah menjalankan seeder, Anda dapat login dengan:
 
-| Role | Email | Password |
-|------|-------|----------|
-| 👨‍💼 **Admin** | `admin@example.com` | `password` |
+| Role            | Email                  | Password   |
+| --------------- | ---------------------- | ---------- |
+| 👨‍💼 **Admin**    | `admin@example.com`    | `password` |
 | 👤 **Karyawan** | `employee@example.com` | `password` |
 
 ## 📊 Database Schema
@@ -189,13 +202,13 @@ Setelah menjalankan seeder, Anda dapat login dengan:
 
 ### 🗃️ Tabel Utama
 
-| Tabel | Deskripsi |
-|-------|-----------|
-| `users` | Data pengguna sistem |
-| `karyawans` | Data karyawan |
-| `jabatans` | Data jabatan |
-| `jenis_cutis` | Jenis-jenis cuti |
-| `pengajuan_cutis` | Data pengajuan cuti |
+| Tabel             | Deskripsi            |
+| ----------------- | -------------------- |
+| `users`           | Data pengguna sistem |
+| `karyawans`       | Data karyawan        |
+| `jabatans`        | Data jabatan         |
+| `jenis_cutis`     | Jenis-jenis cuti     |
+| `pengajuan_cutis` | Data pengajuan cuti  |
 
 ### 🔗 Relasi Database
 
@@ -276,6 +289,7 @@ php artisan config:cache
 <div align="center">
 
 ### 🤝 Kontribusi
+
 Kontribusi sangat diterima! Ikuti langkah berikut:
 
 1. 🍴 Fork repository
@@ -285,6 +299,7 @@ Kontribusi sangat diterima! Ikuti langkah berikut:
 5. 🔄 Buat Pull Request
 
 ### 📞 Dukungan
+
 Jika Anda mengalami masalah atau memiliki pertanyaan:
 
 [![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-red?style=for-the-badge&logo=github)](https://github.com/Brynnnn12/Sistem-Informasi-Pengajuan-Cuti/issues)
@@ -294,14 +309,14 @@ Jika Anda mengalami masalah atau memiliki pertanyaan:
 
 ## 📈 Future Features
 
-- [ ] 📧 Email notifications
-- [ ] 📱 SMS notifications  
-- [ ] 📱 Mobile app
-- [ ] 📊 Advanced reporting
-- [ ] 📅 Calendar integration
-- [ ] ⚙️ Workflow customization
-- [ ] 🔄 Multi-language support
-- [ ] 📈 Analytics dashboard
+-   [ ] 📧 Email notifications
+-   [ ] 📱 SMS notifications
+-   [ ] 📱 Mobile app
+-   [ ] 📊 Advanced reporting
+-   [ ] 📅 Calendar integration
+-   [ ] ⚙️ Workflow customization
+-   [ ] 🔄 Multi-language support
+-   [ ] 📈 Analytics dashboard
 
 ## 📄 License
 
