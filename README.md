@@ -1,41 +1,88 @@
 # 📋 Sistem Informasi Pengajuan Cuti
 
+<div align="center">
+
+![Laravel](https://img.shields.io/badge/Laravel-12.x-red?style=for-the-badge&logo=laravel)
+![PHP](https://img.shields.io/badge/PHP-8.2+-blue?style=for-the-badge&logo=php)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+</div>
+
 Sistem Informasi Pengajuan Cuti adalah aplikasi web berbasis Laravel yang dirancang untuk mengelola pengajuan cuti karyawan secara digital. Aplikasi ini memungkinkan karyawan untuk mengajukan cuti dan admin untuk mengelola persetujuan cuti dengan mudah dan efisien.
+
+## 📸 Screenshot
+
+<!-- Tambahkan screenshot aplikasi Anda di sini -->
+![Dashboard](https://via.placeholder.com/800x400/1e40af/ffffff?text=Dashboard+Screenshot)
+
+## ✨ Demo
+
+🌐 **Live Demo**: [Demo Link](https://your-demo-url.com) (jika tersedia)
+
+## 📋 Table of Contents
+
+- [🚀 Fitur Utama](#-fitur-utama)
+- [🛠️ Teknologi yang Digunakan](#️-teknologi-yang-digunakan)
+- [📦 Persyaratan Sistem](#-persyaratan-sistem)
+- [🔧 Cara Instalasi](#-cara-instalasi)
+- [👥 Default Users](#-default-users)
+- [📊 Database Schema](#-database-schema)
+- [🔐 Role dan Permission](#-role-dan-permission)
+- [🧪 Testing](#-testing)
+- [🛡️ Security](#️-security)
+- [📞 Support & Kontribusi](#-support--kontribusi)
 
 ## 🚀 Fitur Utama
 
+<div align="center">
+  
 ### 👨‍💼 Admin Features
 
--   **Dashboard Admin** - Overview sistem dengan statistik cuti
--   **Manajemen User** - Kelola akun pengguna sistem
--   **Manajemen Jabatan** - CRUD data jabatan karyawan
--   **Manajemen Jenis Cuti** - Kelola jenis-jenis cuti yang tersedia
--   **Manajemen Karyawan** - Kelola data karyawan
--   **Persetujuan Cuti** - Approve/reject pengajuan cuti karyawan
--   **Laporan Cuti** - Monitoring dan pelaporan data cuti
+| Feature | Deskripsi |
+|---------|-----------|
+| 🏠 **Dashboard Admin** | Overview sistem dengan statistik cuti |
+| 👥 **Manajemen User** | Kelola akun pengguna sistem |
+| 💼 **Manajemen Jabatan** | CRUD data jabatan karyawan |
+| 📋 **Manajemen Jenis Cuti** | Kelola jenis-jenis cuti yang tersedia |
+| 👤 **Manajemen Karyawan** | Kelola data karyawan |
+| ✅ **Persetujuan Cuti** | Approve/reject pengajuan cuti karyawan |
+| 📊 **Laporan Cuti** | Monitoring dan pelaporan data cuti |
 
 ### 👤 Karyawan Features
 
--   **Pengajuan Cuti** - Submit permintaan cuti dengan lampiran
--   **Riwayat Cuti** - Melihat status dan history pengajuan
--   **Profile Management** - Kelola profil personal
+| Feature | Deskripsi |
+|---------|-----------|
+| 📝 **Pengajuan Cuti** | Submit permintaan cuti dengan lampiran |
+| 📄 **Riwayat Cuti** | Melihat status dan history pengajuan |
+| ⚙️ **Profile Management** | Kelola profil personal |
 
 ### 🔐 Sistem Keamanan
 
--   **Role-based Access Control** - Pembatasan akses berdasarkan role
--   **Authentication Laravel Breeze** - Sistem login yang aman
--   **Laravel Permission** - Manajemen permission yang fleksibel
+| Feature | Deskripsi |
+|---------|-----------|
+| 🔒 **Role-based Access Control** | Pembatasan akses berdasarkan role |
+| 🔑 **Authentication Laravel Breeze** | Sistem login yang aman |
+| 🛡️ **Laravel Permission** | Manajemen permission yang fleksibel |
+
+</div>
 
 ## 🛠️ Teknologi yang Digunakan
 
--   **Backend**: Laravel 12.x
--   **Frontend**: Blade Templates + Alpine.js
--   **Styling**: Tailwind CSS
--   **Database**: MySQL/PostgreSQL
--   **Authentication**: Laravel Breeze
--   **Permission**: Spatie Laravel Permission
--   **Build Tools**: Vite
--   **PHP Version**: 8.2+
+<div align="center">
+
+| Category | Technology |
+|----------|------------|
+| **Backend** | ![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=flat&logo=laravel&logoColor=white) |
+| **Frontend** | ![Blade](https://img.shields.io/badge/Blade-Templates-FF2D20?style=flat&logo=laravel&logoColor=white) ![Alpine.js](https://img.shields.io/badge/Alpine.js-8BC0D0?style=flat&logo=alpine.js&logoColor=black) |
+| **Styling** | ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white) |
+| **Database** | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white) |
+| **Authentication** | ![Laravel Breeze](https://img.shields.io/badge/Laravel-Breeze-FF2D20?style=flat&logo=laravel&logoColor=white) |
+| **Permission** | ![Spatie](https://img.shields.io/badge/Spatie-Laravel_Permission-197EC8?style=flat) |
+| **Build Tools** | ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white) |
+| **PHP Version** | ![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=flat&logo=php&logoColor=white) |
+
+</div>
 
 ## 📦 Persyaratan Sistem
 
@@ -50,27 +97,33 @@ Pastikan sistem Anda memiliki:
 
 ## 🔧 Cara Instalasi
 
-### 1. Clone Repository
+### Prasyarat
+Pastikan Anda sudah menginstall:
+- PHP >= 8.2
+- Composer
+- Node.js >= 16.x
+- NPM atau Yarn
+- MySQL >= 8.0 atau PostgreSQL >= 13
 
+### Langkah-langkah Instalasi
+
+#### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/Brynnnn12/Sistem-Informasi-Pengajuan-Cuti.git
 cd leave-management
 ```
 
-### 2. Install Dependencies PHP
-
+#### 2️⃣ Install Dependencies PHP
 ```bash
 composer install
 ```
 
-### 3. Install Dependencies Node.js
-
+#### 3️⃣ Install Dependencies Node.js
 ```bash
 npm install
 ```
 
-### 4. Konfigurasi Environment
-
+#### 4️⃣ Konfigurasi Environment
 ```bash
 # Copy file environment
 cp .env.example .env
@@ -79,10 +132,8 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-### 5. Konfigurasi Database
-
+#### 5️⃣ Konfigurasi Database
 Edit file `.env` dan sesuaikan konfigurasi database:
-
 ```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -92,8 +143,7 @@ DB_USERNAME=your_username
 DB_PASSWORD=your_password
 ```
 
-### 6. Migrasi Database
-
+#### 6️⃣ Migrasi Database
 ```bash
 # Jalankan migrasi
 php artisan migrate
@@ -102,14 +152,12 @@ php artisan migrate
 php artisan db:seed
 ```
 
-### 7. Storage Link
-
+#### 7️⃣ Storage Link
 ```bash
 php artisan storage:link
 ```
 
-### 8. Build Assets
-
+#### 8️⃣ Build Assets
 ```bash
 # Development
 npm run dev
@@ -118,47 +166,48 @@ npm run dev
 npm run build
 ```
 
-### 9. Jalankan Aplikasi
-
+#### 9️⃣ Jalankan Aplikasi
 ```bash
 # Menggunakan PHP built-in server
 php artisan serve
-
-# Atau gunakan web server seperti Apache/Nginx
 ```
 
-Aplikasi akan berjalan di `http://localhost:8000`
+🎉 **Aplikasi akan berjalan di** `http://localhost:8000`
 
 ## 👥 Default Users
 
 Setelah menjalankan seeder, Anda dapat login dengan:
 
-### Admin
-
--   **Email**: admin@example.com
--   **Password**: password
-
-### Karyawan
-
--   **Email**: employee@example.com
--   **Password**: password
+| Role | Email | Password |
+|------|-------|----------|
+| 👨‍💼 **Admin** | `admin@example.com` | `password` |
+| 👤 **Karyawan** | `employee@example.com` | `password` |
 
 ## 📊 Database Schema
 
-### Tabel Utama:
+<div align="center">
 
--   `users` - Data pengguna sistem
--   `karyawans` - Data karyawan
--   `jabatans` - Data jabatan
--   `jenis_cutis` - Jenis-jenis cuti
--   `pengajuan_cutis` - Data pengajuan cuti
+### 🗃️ Tabel Utama
 
-### Relasi Database:
+| Tabel | Deskripsi |
+|-------|-----------|
+| `users` | Data pengguna sistem |
+| `karyawans` | Data karyawan |
+| `jabatans` | Data jabatan |
+| `jenis_cutis` | Jenis-jenis cuti |
+| `pengajuan_cutis` | Data pengajuan cuti |
 
--   User → Karyawan (One to One)
--   Karyawan → Jabatan (Many to One)
--   Pengajuan Cuti → Karyawan (Many to One)
--   Pengajuan Cuti → Jenis Cuti (Many to One)
+### 🔗 Relasi Database
+
+```mermaid
+erDiagram
+    users ||--|| karyawans : "has one"
+    karyawans }o--|| jabatans : "belongs to"
+    pengajuan_cutis }o--|| karyawans : "belongs to"
+    pengajuan_cutis }o--|| jenis_cutis : "belongs to"
+```
+
+</div>
 
 ## 🔐 Role dan Permission
 
@@ -222,92 +271,42 @@ npm run build
 php artisan config:cache
 ```
 
-## 📞 Support
+## 📞 Support & Kontribusi
 
+<div align="center">
+
+### 🤝 Kontribusi
+Kontribusi sangat diterima! Ikuti langkah berikut:
+
+1. 🍴 Fork repository
+2. 🌿 Buat feature branch (`git checkout -b feature/AmazingFeature`)
+3. 💾 Commit changes (`git commit -m 'Add some AmazingFeature'`)
+4. 📤 Push ke branch (`git push origin feature/AmazingFeature`)
+5. 🔄 Buat Pull Request
+
+### 📞 Dukungan
 Jika Anda mengalami masalah atau memiliki pertanyaan:
 
--   **Issues**: [GitHub Issues](https://github.com/Brynnnn12/Sistem-Informasi-Pengajuan-Cuti/issues)
--   **Email**: [your-email@example.com]
+[![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-red?style=for-the-badge&logo=github)](https://github.com/Brynnnn12/Sistem-Informasi-Pengajuan-Cuti/issues)
+[![Email](https://img.shields.io/badge/Email-Contact-blue?style=for-the-badge&logo=gmail)](mailto:your-email@example.com)
+
+</div>
+
+## 📈 Future Features
+
+- [ ] 📧 Email notifications
+- [ ] 📱 SMS notifications  
+- [ ] 📱 Mobile app
+- [ ] 📊 Advanced reporting
+- [ ] 📅 Calendar integration
+- [ ] ⚙️ Workflow customization
+- [ ] 🔄 Multi-language support
+- [ ] 📈 Analytics dashboard
 
 ## 📄 License
 
 Aplikasi ini menggunakan [MIT License](https://opensource.org/licenses/MIT).
 
-## 🎯 Contributing
-
-Kontribusi sangat diterima! Silakan:
-
-1. Fork repository
-2. Buat feature branch
-3. Commit changes
-4. Push ke branch
-5. Buat Pull Request
-
-## 📈 Future Features
-
--   [ ] Email notifications
--   [ ] SMS notifications
--   [ ] Mobile app
--   [ ] Advanced reporting
--   [ ] Calendar integration
--   [ ] Workflow customization
-
 ---
 
-Dibuat dengan ❤️ menggunakan Laravel
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
--   [Simple, fast routing engine](https://laravel.com/docs/routing).
--   [Powerful dependency injection container](https://laravel.com/docs/container).
--   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
--   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
--   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
--   [Robust background job processing](https://laravel.com/docs/queues).
--   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
--   **[Vehikl](https://vehikl.com)**
--   **[Tighten Co.](https://tighten.co)**
--   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
--   **[64 Robots](https://64robots.com)**
--   **[Curotec](https://www.curotec.com/services/technologies/laravel)**
--   **[DevSquad](https://devsquad.com/hire-laravel-developers)**
--   **[Redberry](https://redberry.international/laravel-development)**
--   **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-#   S i s t e m - I n f o r m a s i - P e n g a j u a n - C u t i 
- 
- 
+**Dibuat dengan ❤️ menggunakan Laravel Framework**
